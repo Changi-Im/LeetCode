@@ -4,20 +4,28 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        s_ = ""
-
-        for i in range(len(s)):
-            ss = s[i].lower()
-            if (ss >= "a" and ss <= "z") \
-                or (ss >= "0" and ss <= "9"):
-                s_ += ss
-
         sp = 0
-        ep = len(s_) - 1
+        ep = len(s) - 1
+
+        def is_alphanumeric(ch): 
+            return (ch >= "a" and ch <= "z") or (ch >= "0" and ch <= "9")
+
         while ep > sp:
-            if s_[sp] != s_[ep]:
+            r = s[ep].lower()
+            l = s[sp].lower()
+            
+            if not is_alphanumeric(r) and not is_alphanumeric(l):
+                ep -= 1
+                sp += 1
+                continue
+            elif not is_alphanumeric(r):
+                ep -= 1
+                continue
+            elif not is_alphanumeric(l):
+                sp += 1
+                continue
+            if r != l:
                 return False
-            sp += 1
             ep -= 1
-        
+            sp += 1
         return True
