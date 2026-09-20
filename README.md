@@ -37,10 +37,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Changi-Im/LeetCode/tree/master/0001-two-sum) |
+| [0138-copy-list-with-random-pointer](https://github.com/Changi-Im/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
 ## Linked List
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/Changi-Im/LeetCode/tree/master/0002-add-two-numbers) |
+| [0138-copy-list-with-random-pointer](https://github.com/Changi-Im/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
 ## Math
 |  |
 | ------- |
